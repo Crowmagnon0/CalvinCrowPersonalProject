@@ -1,0 +1,244 @@
+/*
+	Theme Name: Calvin Crow HTML5/CSS3 Layout
+	Date: Sept 23, 2014
+*/
+
+body {
+	background-color: #696969;
+	color: #000305;
+	font-size: 87.5%;
+	font-family: Ubuntu, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #706eb0;
+}
+
+a:hover, a:active {
+	background-color: #706eb0;
+	color: #ffffff;
+}
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+
+#namelogo {
+	text-align:		center;
+	color:			#ffffff;
+	font-size:		40px;
+	font-weight:	bold;
+}
+
+.mainHeader img {
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.mainHeader nav {
+	background-color: #120f5e;
+	height: 40px;
+}
+
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #ffffff;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active, 
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background-color: #706eb0;
+	text-shadow: none;
+}
+
+.mainContent {
+	line-height: 25px;
+	border-radius: 5px;
+}
+
+.content {
+	width: 65%;
+	float: left;
+	border-radius: 5px;
+}
+
+.topcontent {
+	background-color: #ffffff;
+	padding: 3% 5%;
+	margin-top: 10px;
+}
+
+.post-info{
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+}
+
+#rollingpics {
+	position:	relative;
+	width:		305px;
+	height:		305px;
+	float:		right;
+}
+
+.rollingpic {
+	padding-top:	10px;
+	padding-right:	10px;
+	padding-bottom:	10px;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mainFooter {
+	width: 100%;
+	height: 40px;
+	float: left;
+	background-color: #120f5e;
+	margin-top: 20px;
+	margin-bottom: 2%;
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 10px;
+	color: #ffffff;
+}
+
+#emailform {
+	width:				380px;
+	margin:				auto;
+	border:				2px solid #120f5e;
+	margin-top:			10px;
+	padding-left:		10px;
+	background-color:	#ffffff;
+}
+
+.formtitle {
+	text-align:			center;
+	font-size:			105%;
+	font-weight:		bold;
+}
+
+label {
+	width:				11em;
+	float:				left;
+	text-align:			left;
+}
+
+input[type=text], input[type=email] {
+	width:				200px;
+	padding:			5px;
+}
+
+textarea {
+	padding:		3px;
+	width:			360px;
+	height:			90px;
+	resize:			none;
+}
+
+.submit { text-align: center; }
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+	
+	.mainHeader img {
+		width: 100%;
+	}
+	
+	.mainHeader nav {
+		height: 120px;
+	}
+
+	.mainHeader nav ul {
+		padding-left: 0;
+	}
+
+	.mainHeader nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainHeader nav a:link, .mainHeader nav a:visited {
+		padding: 10px 25px;
+		height: 20px;
+		display: block;
+	}
+
+	.content {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+	}
+	
+	.post-info {
+		display: none;
+	}
+
+	.topcontent {
+		background-color: #ffffff;
+		border-radius: 5px;
+		padding: 3% 5%;
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+
+	.bottomcontent {
+		margin-top: 3%;
+	}
+	
+	.top-sidebar {
+		width: 94%;
+		margin-left: 3%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		padding: 2% 3%;
+	}
+
+	.middle-sidebar {
+		width: 21%;
+		float: left;
+		background-color: #ffffff;
+		border-radius: 5px;
+		margin-left: 3%;
+		margin-bottom: 2%;
+		padding: 2% 3%;
+	}
+
+	.bottom-sidebar {
+		width: 21%;
+		float: left;
+		background-color: #ffffff;
+		border-radius: 5px;
+		margin-left: 3%;
+		margin-bottom: 2%;
+		padding: 2% 3%;
+	}
+}

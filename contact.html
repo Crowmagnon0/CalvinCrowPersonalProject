@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+Personal Website
+Contact Page
+Calvin Crow
+-->
+
+<html lang="en">
+
+<head>
+	<title>CalvinCrow.com</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--Font Link-->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	
+	<!--JavaScript Tags-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+	<script type="text/javascript" src="picrotator.js"></script>
+
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<div id="namelogo">
+			Calvin Crow
+		</div>
+		
+		<nav><ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="socialmedia.html">Social Media</a></li>
+			<li class="active"><a href="contact.html">Contact</a></li>		
+		</ul></nav>
+	</header>
+	
+	<form id="emailform" action="webformmailer.php" method="post" >
+		<p class="formtitle">
+			Message me
+		</p>
+		<p>
+			<!-- 3 hidden elements for email processing -->
+			<input name="sendto" type="hidden" value="calvin.l.crow@gmail.com" />
+			<input name="subject" type="hidden" value="website feedback" />
+			<input name="location" type="hidden" value="index.html" />
+		
+			<!-- Name -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" 
+			required autofocus 
+			pattern="[a-zA-Z-' ]{4,30}"	 
+			title="Name: 4-30 characters, upper/lowercase letters, or ' only" />
+			<br />
+			<br />
+			
+			<!-- Email Address -->
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" 
+			required 
+			pattern="[a-zA-Z0-9-_$.]+@[a-zA-Z0-9-_.]+\.[a-z]{2,20}" 
+			title="Email: Valid email addresses only" />
+			<br />
+			<br />
+			
+			<!-- Comments -->
+			Comments:
+			<br />
+			<textarea name="comments" id="comments" rows="2" cols="49" 
+			required maxlength="500" title="Please enter your comments. Be nice!" 
+			onfocus="commsg()" ></textarea>
+		</p>
+		
+		<p class="submit">
+			<!-- Submit button -->
+			<input type="submit" value="Send Email" />
+			
+			<!-- Reset button -->
+			<span class="reset">
+				<input type="reset" value="Clear Form" onclick="history.go(0)" />
+			</span>
+		</p>
+	</form>
+	
+	<footer class="mainFooter">
+		<p>Copyright &copy; <a href="index.html" title="calvincrow">CalvinCrow.com</a></p>
+	</footer>
+
+</body>
+
+</html>
